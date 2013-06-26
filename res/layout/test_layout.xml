@@ -1,0 +1,31 @@
+<!-- You have to use "android:layout_width" and "android:layout_height" in TableLayout tag only. not anywhere else. And use "android:layout_weight" in each element of TableRow tag to adjust the columns horizontally.Try the below coding. -->
+
+<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+ 				android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:id="@+id/cpotl1textview1"
+                    android:layout_weight="0.5"
+                    android:text="Total Outstanding" />
+                <EditText android:id="@+id/cpotl1edittext1"
+                    android:layout_weight="0.5"
+                    android:inputType="numberDecimal" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/cpotl1textview2"
+                    android:layout_weight="0.5"
+                    android:text="Claim Amount" />
+                <EditText android:id="@+id/cpotl1edittext2"
+                    android:layout_weight="0.5"
+                    android:inputType="numberDecimal" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/cpotl1textview3"
+                    android:layout_weight="0.5"
+                    android:text="Select Message" />
+                <AutoCompleteTextView android:id="@+id/cpotl1autocompletetextview"
+                    android:layout_weight="0.5"
+                     android:hint="Templates" />
+            </TableRow>
+        </TableLayout>    
+

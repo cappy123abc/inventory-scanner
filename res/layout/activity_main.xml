@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TableRow>
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="0px"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:gravity="center"
+	                android:text="Id"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+	            
+	            <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="0px"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:gravity="center"
+	                android:text="Item ID"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	            <TextView
+	                android:id="@+id/textView3"
+	                android:layout_width="0px"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:gravity="center"
+	                android:text="Qty"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	            <TextView
+	                android:id="@+id/textView4"
+	                android:layout_width="0px"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:gravity="center"
+	                android:text="Location"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+			</TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="0px"
+        			android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:inputType="number"
+                    android:layout_width="0px"
+        			android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="0px"
+        			android:layout_height="wrap_content"
+					android:layout_weight="3"/>
+
+            </TableRow>
+        </TableLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+       	android:descendantFocusability="afterDescendants"
+>
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_weight="0.54"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onUpdateButtonClicked"
+            android:text="Update"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Button_Text"
+            android:onClick="onAddButtonClicked" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" 
+            android:onClick="onDeleteButtonClicked"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>
