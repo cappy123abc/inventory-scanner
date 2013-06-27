@@ -118,5 +118,15 @@
             android:visibility="invisible"/>
 
     </LinearLayout>
+    
+    <android.inputmethodservice.KeyboardView
+   android:id="@+id/keyboardView"
+   android:visibility="gone"
+   android:focusable="true"
+   android:focusableInTouchMode="true"
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:layout_alignParentBottom="true" />
+    
 
 </LinearLayout>

@@ -117,6 +117,14 @@ public class MainActivity extends ListActivity implements OnTouchListener  {
 		c = getNewCursor();
 		my_adapter = new MyCursorAdapter(this,c,1);		
 		setListAdapter(my_adapter);
+		
+		Keyboard mKeyboard = new Keyboard(MainActivity,R.xml.my_keyboard);
+	    // Lookup the KeyboardView
+	    KeyboardView mKeyboardView= (KeyboardView)findViewById(R.id.keyboardview);
+	    // Attach the keyboard to the view
+	    mKeyboardView.setKeyboard( mKeyboard );
+	    // Do not show the preview balloons
+	    mKeyboardView.setPreviewEnabled(false);
 	
 	}
 	
